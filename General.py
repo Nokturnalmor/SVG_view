@@ -64,7 +64,7 @@ class mywindow(QMainWindow):
             if not CQT.msgboxgYN(f'{full_path} уже существует, заменить?'):
                 return
             F.udal_file(full_path)
-        F.skopir_file(self.ico_pack_path + name_ico, full_path)
+        F.skopir_file(self.ico_pack_path + F.sep() + name_ico, full_path)
         CQT.msgbox(f'ОК', time_life=0.5)
 
 
